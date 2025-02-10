@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <link rel="icon" type="image/x-icon" href="timeline imgs\PHILPRES logo.PNG">
+    <link rel="stylesheet" href="second.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<!--TIMELINE ITSELF-->
+<section class="timeline-content" id="timeline-content">
+<div class="home" id="blur">
+    <div class="timeline-title">
+        <h1>Harooo!!!</h1>
+
+        <p>
+            hindi talaga ito miniproject,,,
+        </p>
+    </div>
+
+    <div class="timeline">
+
+        <div class="container left-container" id="aguinaldo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABOElEQVR4nO2YzWqDQBSFz0JBcCU0WbrQje/gQleC25A+UJo8ge/VxicR8wPucoutlBIYM4LGsT0fnLXnY+YOcgFCCCGE9LIGcABwBHAFIDPlCuADwL7rNIhXAOcZy4sibaftEImbAaVFkZuOzNrQk5C7nACs+kQOBpQUzbz1iZQGFBTNtA+AkosBBUUz7QgoGf2DruuK53liWdYUMkpG/1hZltKSpulyRfI8/5JYnIht2xJFkWRZJkVRSNM0yxRJkkRULEokjmOpquondV0vUwR3CcOQIuCJfMOrBc4I+GqhB84IOCPgjOBZM9LG930JgkAcx3nqv9Z5CpkJNylKjgYUlDGWD3sDCopmdn9hQVcDeMEDtgtYmW4eSfyWORl6EhsMZNWtJd9nXtxdug47netECCGE/Gs+AWRK4CsZM5RSAAAAAElFTkSuQmCC" class="num">
+            <div class="text-box">
+                <h2>First</h2>
+
+
+                <ul class="btn-box">
+                    <a href="#" onclick="toggle(event)"> Read More</a>
+                </ul>
+
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container right-container"  id="quezon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACIklEQVR4nO2YPYviQBjHH19ARLFQdwVLUTBa+gL2FtbLHmqtvaCd3V62sPQTCIIfQlsLRfBu7wv4ASyU2+yCWJj/kaDh8Eg2cpNz3JsfPI0DM/+fM5OEh0ggEAgEAoEl90T0TEQvRPRORLhSvRPRdyKSj5ku4gsRKVcMD5PSMj1eIqFyEBompdqRued0J3BWr0R0ZyXyzEFI2KyvViI/OAgIm6U9AEx54yAgbJZ2BUxhulgkEkGxWEQul0M0GnVCxhQmCySTSYzHYxwOB5xQVRXT6VSXugmRWCyG9XoNM3a7HfL5PP8ig8HACN3r9RAOh+H3+1Gv16Eoiv77bDbjW8Tr9RphtaN1Pt5utw3JeDzOr0gikTCCNpvNP8az2awxXiqV+BWRJAnb7VYv7Wl1Pl6pVAyRVCrFrwhZlMfj0e+Gxmq1gsvluj0Rn8+H0Whk7EatVmM1tynMJTKZDJbLpSEhyzLL+U1htojb7Uan09HfG6f3R6PRYP1HmcJkgWAwiMlkYuzCfD5HOp1mvttkwV9PHgqFsFgsdIH9fo9ut6tfdAck4KjIcDjUJTabDQqFglMCcFRE+1g8fShWq1WnJeCYSKvVgl20pxm3Iv1+/3OISJKEcrlsqwKBgKMiyj841yw7Kaa8cBAQLJoPMgcBYbOePkOD7icRRekDHm+gZfrwkcTvMq+c7sQDXcjdsS357cqNu7djhic7x0kgEAgEgv+aX3MKTl8kuycfAAAAAElFTkSuQmCC" class="num">
+            <div class="text-box">
+                <h2>Second</h2>
+
+                <ul class="btn-box">
+                    <a href="#" onclick="toggle1(event)"> Read More</a>
+                    </a>
+                </ul>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container left-container" id="laurel">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACYUlEQVR4nO2Yz4tpYRjHH/md1dEdZYFix8aSbG2Uhaa5FvIP2FpSau7M0kp2VhIpK2sbGyV1uVsJJWxY3DHKj5jndt7MiTHMUVyve99PPQvnPXm/n855n/P2AjAYDAaDwTiKDgCeAaABAFMAwCvVFADqAPC0yXQS3wFgcsXweKD4TA+nSLxREBoP1JsYGR2lTwI/1AsA3B0TeaYgJIqsH8dEflEQEEUW3wAO8kpBQBRZ/BI4yFknU6lUaLVa0eFwoMlkuoTMQc4ygVKpxHg8jpPJBLdpNpvo9/tvQ0QikWCxWNwRWK1WO7+DwSD9Il6vVwicSqVQq9WiXC5Hl8uF7XabXB8OhyiVSukWyeVyJGyn00GZTLYzFggEBEmbzUa3SKPRIEETicTemNvtFkTsdjvdIi6XiwQ2m817ayefzxOJwWCACoWCbhH4UOFwGGOxGFYqFSIxn8/R4/Gc6///nsh0Ot3pWLVaDS0Wy+2JZDIZ0r2q1Squ12siMx6P0WAw3JYIbBW/dhaLhdCaqRVRq9UkLF8cx316T6FQICKtVoteEY7jhLXg8/k+vYdvyzy9Xo9eEQDA0WhEgqbT6b0xvgXX63UyXi6X6RZJJpPCU4lGo2QDyV83Go1k4b8TCoXoFtHpdNjtdoXAy+WSfAC3KZVKt/FB1Ov1mM1mcTab7Qj0+32MRCLnksCLi7yXRqMhm0On07m3Zbm0yOQCk13yJOUgDQoC4jkOH54oCIgi6/FfOKD7DQDf4AsebuDI9P4riW2ZF0qfxD2cyN3mWPLnlQ/uXjcZHsW8TgwGg8Fg/Nf8Ae17TZn0GhHDAAAAAElFTkSuQmCC" class="num">
+            <div class="text-box">
+                <h2>Third</h2>
+
+                <ul class="btn-box">
+                    <a href="#" onclick="toggle2(event)"> Read More</a>
+                    </a>
+                </ul>
+
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container right-container" id="osmena">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABpElEQVR4nO2YvYrCQBSFT6Fi5w+rnWDhQwgqivgEYipLax/Bwij4KDZ5jYBN1n0EwV5itPPnLhncsMgmTsCsM7v3g9MMIZ6PyUS9AMMwDMMwkZQBzAGsARwB0ItyBPAOYHbrFAsDgPfC8hQSv9MgjsRVgdIUkquMTFnRnaC77AGUokTmCpQkyZhRIh8KFCTJ+C+AUA4KFCTJ+EcglMQ+uNVqUa/Xo2w2+8z7hpKIhGEY9EW1WtVTpFKp0G6301sklUqRbduBhLYipmmK8qfTSV+RZrNJ5/NZlJ9MJnqK5PN52mw2orhlWaK8liLL5VKU3m63VCwW9RQZjUai8OVyoW63K9a0E6nVauR5nii8WCyCda1E0uk0rVYrUdZxHMpkMnqKtNttksF1XfEF2Wg01BTpdDoUB/96JUUKhYL4UfhTxuNxIDAcDsWaf72SIohIvV7X54yARaDPjuRyueC8/NYfKy8pmYQmKaGsFShIzxg+zBQoSJKZ/oUBnQvgDQ8YaDAy7T+S+C6zV3Qn+ohJ6TaWdF48uDvcOkxlHieGYRiG+dd8AiYlPMV/OBqnAAAAAElFTkSuQmCC" class="num">
+            <div class="text-box">
+                <h2>Fourth</h2>
+
+                <ul class="btn-box">
+                    <a href="#" onclick="toggle3(event)"> Read More</a>
+
+                </ul>
+
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container left-container" id="roxas">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJUlEQVR4nO2Yz4tpYRjHvyspWZCZsrBWIiSyECV/geYurWwU1rKcH/mxkp2/wF+g7ChRFu6d+x9ILKU7dyYKeW7nzZzm3rnnOOrM9Z6576eeyCvv9+P1nJMHEAgEAoFAoMo1gAcAjwBeANCF6gXANwD3x0xn8QXAzwuGJ4WSMt2cI3HgIDQp1EGLzDWnJ0F/1BOAKzWRBw5Cksa6UxP5zkFA0ljSBUCRZw4CksaSWkARXTZxuVyUSqUUKxaL6SWjiC4b1Ot1UmM2mxlDpNvtfg6RxWLBAmezWb0C0z8Xsdvt8jcfCoWMK5JIJJjEbrcjs9lsXJF8Pi/3QaVSoclkwp5Lj7VajZxOpzFEWq2WaqMvl0sKh8P8i4xGIxZ4s9lQqVQiv99PkUiEqtUqe01iPp+TxWLhW6RcLlOz2aR4PP5uLZ1OyyeTy+X4FsGJkvpFot1uG1tkMBgwkfF4zK+Iz+djVyepbDbbX98znU6ZSK/X41fE4XDIPZDJZN6tR6NReb3RaPArAoD6/T4Lul6vqVgssju9yWSiZDIpn8Z2uyWv18u3iMfjodVqpXgfORwOVCgU9JCgD292t9tNnU6H9vv9bwLD4ZD9H9FrH3y0yGtJDR8IBCgYDJLVatX1s3FCxAgTFHozSVHkkYOApMfw4Z6DgKSxbj/DgO4HAAdOcGOAkWn6lMRbmSdOTyKNM7k6jiW/Xnhw93zMcKvl5yQQCAQCwX/NL/8DVuHsmAyXAAAAAElFTkSuQmCC" class="num">
+            <div class="text-box">
+                <h2>Fifth</h2>
+
+                <ul class="btn-box">
+                    <a href="Third.html" > Read More</a>
+                    </a>
+                </ul>
+
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="popup" id="popup1">
+
+
+        <h3>First</h3>
+
+        <p>
+            First of all sorry if di ako namamansin or mahirap ako e approach,
+            na explain ko nmn na sayo yun pero honestly I don't know how to approach you too 😅 until now actually di ko padin alam kung paano ka e approach hehe just winging it nlg kungbaga.
+            ang alam ko lng gawin is ayain ka mag wild rift 😂 pero mababa pa rank ko soooooooo yeahhhh... Kung di mo pa gets kung ano ito its a letter ig na pa website.
+        </p>
+
+
+
+        <a href="#" onclick="toggle(event)"> Close </a>
+
+    </div>
+
+
+    <div class="popup" id="popup2">
+
+
+        <h3>Second</h3>
+
+        <p>
+            Second of all kaya siya website is syempre comp sci ako and ito lng yung alam ko na pwedeng gawin na unique for Valentine's and ito yung kaya kong gawin.
+            Ewan ko kung unique siya pero kaw na bahala dun. Di nmn ako magaling mag drawing katulad mo. Di din ako marunong mag crochet para gawan ka ng malit na stuffed toy or something.
+            Kaya ill be using the skills that I'm good at and I'll be using the resources that I currently have.
+            Disclaimer lng 3 am ko ito ginagawa so kung may words na malimali ill give you the right to laugh about it 😂😂😂,,,
+
+        </p>
+
+        <a href="#" onclick="toggle1(event)"> Close </a>
+
+    </div>
+
+
+    <div class="popup" id="popup3">
+
+
+        <h3>Third</h3>
+
+        <p>
+            Third is that I want to be honest sayo and gusto ko lng nmn sabihin is that I like you... I don't want to hide things knowing na we are friends,
+            I just want to be clear about it and inform you about it. If curious ka kung kelan pa siguro mga bago pa mag midterm noon sa sts hehe ✌️.
+            Pero yun nga I just want to know you personally and I have so many questions that I want to ask you. Like ano yung fav color mo,
+            ano yung mga gusto mong ginagawa other than play wild rift or codm, or ano yung mga trip mo sa buhay yung mga ganung questions. Pero yeah nahihiya lng ako😅.
+            Na bablanko din utak ko most of the time pag ka usap ko so yeahhhh,,,
+            nagulat nlg talaga ako noon nung hinila ako ni gelo para kausapin ka hiyang hiya ako nun honestly di ko alam kung paano ka kakausapin or kung ano sasabihin ko sayo 😭
+            and thank you talaga sa payong and sorry kung di ko na patuyo ✌️ pero inigatan ko yun and di ko siya hinayaan masira,,, got more interested noong pinakita mo sakin yung commission mo noon na gusto mo e animate.
+            Ang nasaisip ko nun is that ang amazing nmn ng taong ito ang galing ng creativity and imagination sa ginagawa niya and you describe it to me na you want the image to move like this and like that and it really got
+            me really interested at you and how the art would end up in the future. Pero yun nga ang kulet lng 😂.
+            sorry kung di ako ma react na tao or di ako ma comment na tao ang kaya ko lng talaga is makinig sa stories mo and smile about things you're interested at doing.
+        </p>
+
+
+
+        <a href="#" onclick="toggle2(event)"> Close </a>
+
+    </div>
+
+
+    <div class="popup" id="popup4">
+
+
+        <h3>Fourth</h3>
+
+        <p>
+            Fourth is that since alam mo na yung feelings ko towards you pls pls pls walang mag ba bago.
+            Pls wag mo ako iwasan dahil lng dito. And sana hindi maging awkward or something (pero most likely it will be kase ako yung mag papa awkward 😓).
+            Pero yun nga happy Valentine's day sayo and sabi mo diba na bday month mo is feb ehhh di mo sinabi sakin kung anong date sooooo advance/belated happy bday nlg sayo.
+            Pero if you're up to hang out sometime why not. Or if (if lng nmn) gusto mo humabol sa Valentine's day edi why not din diba /j.
+            Pero yeahh ayaw kita e pressure on this thing and sabi mo nga choice mo namn if gusto mo mag ka relationship diba so yeahhh di kita pipilitin jan,
+            you don't have to answer me right away and ill give you space din if yun ang gusto mo, so yun lng nmn wala na,,,nahihiya na ako.
+            Lastly good luck sa midtermssssss and sana magustuhan mo yung virtual flowers (masmaganda siya sa laptop promise).
+
+        </p>
+
+        <a href="#" onclick="toggle3(event)"> Close </a>
+
+    </div>
+
+
+    <!--Back to Top of Page-->
+
+
+</div>
+    <script src="second.js"></script>
+</body>
+</html>
